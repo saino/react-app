@@ -13,10 +13,10 @@ const getConfirmation = () => {
 }
 
 
-ReactDOM.render(<HashRouter  
-				
-				    >
+ReactDOM.render(<HashRouter>
 					<div>
+
+
 						<Route exact path="/" component={HomePage}/>
 						<Route exact path="/page1" component={ThePage1}/>
 						<Route exact path="/page2" component={ThePage2}/>
