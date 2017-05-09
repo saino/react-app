@@ -10,7 +10,7 @@ node_modules
 doc
 
 #build
-dist
+dist/index.js
 
 #webstorm
 .idea

@@ -4,7 +4,7 @@ import CommonPage from "../common/commonPage";
 
 export default class HomePage extends Component{
 	render(){
-		return(
+		return( 
 			<div>
 				This is the home page.
 			</div>
