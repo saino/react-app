@@ -3,6 +3,7 @@ import "./homePage.css";
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import CommonPage from "../common/commonPage";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 // const HomePage = ()=>(
 // 	<div>
@@ -16,11 +17,13 @@ import CommonPage from "../common/commonPage";
 // 	</div>
 // )
 // export default HomePage;
+var i = 0;
 export default class HomePage extends Component{
 	constructor(props){
         super(props)
     };
 	render(){
+		console.log(this.props)
 		return(  
 			<div className="homePage">
 				This is the home page....... s
@@ -30,6 +33,15 @@ export default class HomePage extends Component{
 				<Link to="/page2">go to page2</Link>
 				<br/>
 				<Link to="page3">go to page3</Link>
+				<ReactCSSTransitionGroup
+			            transitionName="page"
+		                transitionEnterTimeout={80000}
+		                transitionLeaveTimeout={80000}
+			         >
+				 {
+                    this.props.children
+                }
+				</ReactCSSTransitionGroup>
 			</div>
 		);
 	};

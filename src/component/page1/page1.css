@@ -1,6 +1,6 @@
-.homePage{
+.page1{
 	height: 100%;
 	width: 100%;
-	background: yellow;
+	background-color: green;
 	position: absolute;
 }
