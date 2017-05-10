@@ -11,7 +11,10 @@ module.exports = {
 	},
 	module:{
 		loaders:[
-			{test: /\.jsx?$/, loaders:['babel-loader?presets[]=es2015,presets[]=react']}
+			{test: /\.jsx?$/, loaders:['babel-loader?presets[]=es2015,presets[]=react']},
+			{test: /\.css$/, loaders:['style-loader','css-loader']},
+			{test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192'},
+			{test: /\.svg/, loader: 'svg-url-loader'}
 		]
 	},
 	plugins: [
