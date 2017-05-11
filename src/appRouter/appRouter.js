@@ -31,13 +31,13 @@ export default class AppRouter extends Component{
 		return (
 			<HashRouter>
 				<div id="app">
-					
+					{/*
 						<HomePage>
 							<Route exact path="/page1" component={ThePage1}/>
 							<Route exact path="/page2" component={ThePage2}/>
 							<Route exact path="/page3" component={ThePage3}/>
 						</HomePage>
-					
+					*/}	
 			        {/*
 
 			            <Route exact path="/" component={HomePage} />
@@ -45,57 +45,51 @@ export default class AppRouter extends Component{
 						<Route exact path="/page2" component={ThePage2}/>
 						<Route exact path="/page3" component={ThePage3}/>
 			        */}
-					{/*	
-			        <ReactCSSTransitionGroup
-			            transitionName="page"
-			            transitionAppear={true}
-		                transitionAppearTimeout={8000}
-		                transitionEnterTimeout={8000}
-		                transitionLeaveTimeout={8000}
-			         >
+						
+			    
 						<Route exact path="/" component={HomePage} />
 						<Route exact path="/page1" component={ThePage1}/>
 						<Route exact path="/page2" component={ThePage2}/>
 						<Route exact path="/page3" component={ThePage3}/>
-					</ReactCSSTransitionGroup>
-					*/}	
+					
+					
 					{/*
-					<ReactCSSTransitionGroup
-			            transitionName="page"
-			            transitionAppear={true}
-		                transitionAppearTimeout={800}
-		                transitionEnterTimeout={800}
-		                transitionLeaveTimeout={800}
-			         >
-						<Route exact path="/" component={HomePage} />
-					</ReactCSSTransitionGroup>
-					<ReactCSSTransitionGroup
-			            transitionName="page"
-			            transitionAppear={true}
-		                transitionAppearTimeout={800}
-		                transitionEnterTimeout={800}
-		                transitionLeaveTimeout={800}
-			         >
-						<Route exact path="/page1" component={ThePage1}/>
-					</ReactCSSTransitionGroup>
-					<ReactCSSTransitionGroup
-			            transitionName="page"
-			            transitionAppear={true}
-		                transitionAppearTimeout={800}
-		                transitionEnterTimeout={800}
-		                transitionLeaveTimeout={800}
-			         >>
-						<Route exact path="/page2" component={ThePage2}/>
-					</ReactCSSTransitionGroup>
-					<ReactCSSTransitionGroup
-			            transitionName="page"
-			            transitionAppear={true}
-		                transitionAppearTimeout={800}
-		                transitionEnterTimeout={800}
-		                transitionLeaveTimeout={800}
-			         >
-						<Route exact path="/page3" component={ThePage3}/>
-					</ReactCSSTransitionGroup>
+						<ReactCSSTransitionGroup
+				            transitionName="page"
+				            transitionAppear={true}
+			                transitionAppearTimeout={800}
+			                transitionEnterTimeout={800}
+			                transitionLeaveTimeout={800}
+				         >
+							<Route exact path="/" component={HomePage} />
+						</ReactCSSTransitionGroup>
+						<ReactCSSTransitionGroup
+				            transitionName="page"
+				            transitionAppear={true}
+			                transitionAppearTimeout={800}
+			                transitionEnterTimeout={800}
+			                transitionLeaveTimeout={800}
+				         >
+							<Route exact path="/page1" component={ThePage1}/>
+						</ReactCSSTransitionGroup>
+						<ReactCSSTransitionGroup
+				            transitionName="page"
+				            transitionAppear={true}
+			                transitionAppearTimeout={800}
+			                transitionEnterTimeout={800}
+			                transitionLeaveTimeout={800}
+				         >>
+							<Route exact path="/page2" component={ThePage2}/>
+						</ReactCSSTransitionGroup>
+						<ReactCSSTransitionGroup
+				            transitionName="page"
+				            transitionAppear={true}
+			                transitionAppearTimeout={800}
+			                transitionEnterTimeout={800}
+			                transitionLeaveTimeout={800}
+				         >
+							<Route exact path="/page3" component={ThePage3}/>
+						</ReactCSSTransitionGroup>
 					*/}
 				</div>
 			</HashRouter>

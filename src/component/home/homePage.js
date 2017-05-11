@@ -23,26 +23,26 @@ export default class HomePage extends Component{
         super(props)
     };
 	render(){
-		console.log(this.props)
 		return(  
-			<div className="homePage">
-				This is the home page....... s
-				<br/>
-				<Link to="page1">go to page1</Link>
-				<br/>
-				<Link to="/page2">go to page2</Link>
-				<br/>
-				<Link to="page3">go to page3</Link>
-				<ReactCSSTransitionGroup
-			            transitionName="page"
-		                transitionEnterTimeout={80000}
-		                transitionLeaveTimeout={80000}
-			         >
-				 {
-                    this.props.children
-                }
-				</ReactCSSTransitionGroup>
-			</div>
+		   	<ReactCSSTransitionGroup
+		            transitionName="page"
+		            transitionAppear={true}
+	                transitionAppearTimeout={8000}
+	                transitionEnterTimeout={8000}
+	                transitionLeaveTimeout={8000}
+		         >
+				<div className="homePage">
+					This is the home page....... s
+					<br/>
+					<Link to="/">go to home</Link>
+					<br/>
+					<Link to="page1">go to page1</Link>
+					<br/>
+					<Link to="/page2">go to page2</Link>
+					<br/>
+					<Link to="page3">go to page3</Link>
+				</div>
+			</ReactCSSTransitionGroup>
 		);
 	};
 }
